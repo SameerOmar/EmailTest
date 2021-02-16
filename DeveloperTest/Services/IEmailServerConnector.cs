@@ -16,7 +16,7 @@ namespace DeveloperTest.Services
         bool Connect(string server, int port, EncryptionProtocol encryptionProtocol);
         void Disconnect();
         EmailEnvelop GetMailEnvelope(MessageUid messageUid);
-        EmailBody GetMailBodyStructure(MessageUid messageUid);
+        EmailBody GetMailBody(MessageUid messageUid);
         List<MessageUid> GetMessagesUids();
         List<MimeData> GetMailAttachments(MessageUid messageUid);
         IEmailServerConnector Clone();

@@ -139,7 +139,7 @@ namespace DeveloperTest.Services
             }
         }
 
-        public EmailBody GetMailBodyStructure(MessageUid messageUid)
+        public EmailBody GetMailBody(MessageUid messageUid)
         {
             try
             {

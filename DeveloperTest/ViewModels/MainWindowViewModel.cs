@@ -123,7 +123,7 @@ namespace DeveloperTest.ViewModels
             {
                 var connector = CreateServerConnector();
 
-                var emailBody = connector?.GetMailBodyStructure(emailMessageModel.MessageId);
+                var emailBody = connector?.GetMailBody(emailMessageModel.MessageId);
 
                 if (emailBody == null)
                 {

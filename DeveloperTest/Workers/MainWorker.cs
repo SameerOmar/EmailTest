@@ -251,7 +251,7 @@ namespace DeveloperTest.Workers
                     continue;
                 }
 
-                emailInfo.EmailBody = connector.GetMailBodyStructure(emailInfo.MessageUid);
+                emailInfo.EmailBody = connector.GetMailBody(emailInfo.MessageUid);
 
                 if (emailInfo.MessageEnvelope == null)
                 {

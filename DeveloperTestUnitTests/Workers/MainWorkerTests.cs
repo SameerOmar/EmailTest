@@ -120,7 +120,7 @@ namespace DeveloperTestUnitTests.Workers
                 .Returns(new EmailEnvelop("Test", "test@test.com", "this is a test", DateTime.Now));
             connector.Setup(c => c.GetMessagesUids()).Returns(new List<MessageUid> {new MessageUid(1)});
             connector.Setup(c => c.Clone()).Returns(new Mock<IEmailServerConnector>().Object);
-            connector.Setup(c => c.GetMailBodyStructure(It.IsAny<MessageUid>()))
+            connector.Setup(c => c.GetMailBody(It.IsAny<MessageUid>()))
                 .Returns(new EmailBody(true, "html test", "text test"));
 
             return connector.Object;
